@@ -45,6 +45,7 @@
                 </form>
         </section><hr><br>
         <section>
+            <!--links to other pages in admin app-->
             <p><a href="index.php">Back to Admin Vehicle List</a></p><br>
             <p><a href="index.php?action=show_add_vehicle_form">Add a Vehicle to Inventory</a></p><br>
             <p><a href="index.php?action=edit_classes">View/Edit Vehicle Classes</a></p>
