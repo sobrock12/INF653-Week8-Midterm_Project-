@@ -3,8 +3,8 @@
     <main>
         <section>
 
-            //form displays three selection lists and two radio buttons. each form element passes selected variable to 
-            //get_vehicles_by_criteria function
+            <!--form displays three selection lists and two radio buttons. each form element passes selected variable to 
+            //get_vehicles_by_criteria function-->
             <form action="." method="get" id="sort_selection">
                 <div id="select_div">
                 <select name="make_selection">
@@ -51,7 +51,7 @@
                 <br>
 
             
-                //table that prints out results of selected vehicles if size of $vehicles array is not zero
+                <!--table that prints out results of selected vehicles if size of $vehicles array is not zero-->
                 <?php if(sizeof($vehicles) != 0) { ?>
                 <div id="table">
                     <table>
