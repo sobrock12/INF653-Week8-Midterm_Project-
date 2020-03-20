@@ -1,4 +1,5 @@
 <?php
+//same as type_db.php file located in 'zippy' directory but adds functions to add and remove types
     function get_type() {
         global $db;
         $query = 'SELECT * FROM vehicle_type ';
