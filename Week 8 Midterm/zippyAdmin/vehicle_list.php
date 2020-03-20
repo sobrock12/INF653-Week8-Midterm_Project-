@@ -1,5 +1,7 @@
 <?php include 'view/header.php'; ?>
 <div id="main_div">
+    <!-- same as vehicle_list.php page in 'zippy' directory but with added "Remove" button used to submit variable $vehicle_id
+        to vehicle_db.php page for delete_vehicle function-->
     <main>
         <section>
 
