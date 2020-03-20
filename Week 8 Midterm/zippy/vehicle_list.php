@@ -1,8 +1,10 @@
-<?php include 'view/header.php'; ?>
+<?php include 'view/header.php'; ?>             //adds html header file
 <div id="main_div">
     <main>
         <section>
 
+            //form displays three selection lists and two radio buttons. each form element passes selected variable to 
+            //get_vehicles_by_criteria function
             <form action="." method="get" id="sort_selection">
                 <div id="select_div">
                 <select name="make_selection">
@@ -48,6 +50,8 @@
                     
                 <br>
 
+            
+                //table that prints out results of selected vehicles if size of $vehicles array is not zero
                 <?php if(sizeof($vehicles) != 0) { ?>
                 <div id="table">
                     <table>
@@ -75,10 +79,10 @@
                         </tbody>
                     </table>
                 </div>
-                <?php } else { ?>
+                <?php } else { ?> //if no elements are found in $vehicles array, prints out message
                     <h2>No vehicles found using selected criteria! Please try another search.</h2>
                 <?php } ?>
         </section>
     </main>
 </div>
-<?php include 'view/footer.php'; ?>
+<?php include 'view/footer.php'; ?>     //this is the html footer for the page
