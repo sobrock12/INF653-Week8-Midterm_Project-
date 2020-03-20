@@ -1,5 +1,8 @@
 <?php include 'view/header.php'; ?>
 <div id="main_div">
+    <!--contains table that displays classes contained in vehicle_class table and gives user option to delete listed class.
+        lets user enter new class via text form at bottom of page. passes variables to functions that run SQL queries 
+        to add and remove items from table-->
     <main>
         <section>
             <h2>Vehicle Class List</h2>
@@ -44,6 +47,7 @@
                 <hr><br>
         </section>
         <section>
+            <!--links to other pages in admin app-->
             <p><a href="index.php">Back to Admin Vehicle List</a></p><br>
             <p><a href="index.php?action=show_add_vehicle_form">Add a Vehicle to Inventory</a></p><br>
             <p><a href="index.php?action=edit_types">View/Edit Vehicle Types</a></p>
