@@ -1,7 +1,9 @@
 <?php include 'view/header.php'; ?>
 <div id="main_div">
+    <!--page that lets user enter new vehicle information into a form and passes variables to functions for SQL query implementation-->
     <main>
         <section>
+            <!--start of add vehicle form-->
         <h2>Add Vehicle</h2><br>
         <form action="index.php" method="post" id="add_vehicle_form">
             <input type="hidden" name="action" value="add_vehicle">
@@ -40,6 +42,7 @@
             <input type="submit" value="Add Vehicle"><br>
         </form><br><hr>
 
+                  <!--links for accessing other pages in admin app-->
         <p><a href="index.php?action=list_vehicles">Back to Admin Vehicle List</a></p><br>
         <P><a href="index.php?action=edit_types">View/Edit Vehicle Types</a></p><br>
         <p><a href="index.php?action=edit_classes">View/Edit Vehicle Classes</a></p>
