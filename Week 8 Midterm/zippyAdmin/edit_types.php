@@ -1,5 +1,7 @@
 <?php include 'view/header.php'; ?>
 <div id="main_div">
+    <!--page displays all types contained in vehicle_type table and lets user delete listed types. also lets user 
+        add new type via text box at bottom-->
     <main>
         <section>
             <h2>Vehicle Type List</h2>
