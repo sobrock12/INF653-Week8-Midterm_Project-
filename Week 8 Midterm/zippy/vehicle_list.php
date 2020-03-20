@@ -1,4 +1,4 @@
-<?php include 'view/header.php'; ?>             //adds html header file
+<?php include 'view/header.php'; ?>             <!--adds html header file-->
 <div id="main_div">
     <main>
         <section>
@@ -79,10 +79,10 @@
                         </tbody>
                     </table>
                 </div>
-                <?php } else { ?> //if no elements are found in $vehicles array, prints out message
+                <?php } else { ?> <!--if no elements are found in $vehicles array, prints out message-->
                     <h2>No vehicles found using selected criteria! Please try another search.</h2>
                 <?php } ?>
         </section>
     </main>
 </div>
-<?php include 'view/footer.php'; ?>     //this is the html footer for the page
+<?php include 'view/footer.php'; ?>     <!--this is the html footer for the page-->
