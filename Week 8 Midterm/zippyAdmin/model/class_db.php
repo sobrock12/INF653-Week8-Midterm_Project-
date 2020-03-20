@@ -1,4 +1,5 @@
 <?php
+//same as class_db.php file in 'zippy' directory, but adds functions for adding and removing classes
     function get_vehicle_class() {
         global $db;
         $query = 'SELECT * FROM vehicle_class ';
