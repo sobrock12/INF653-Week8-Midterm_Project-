@@ -1,12 +1,12 @@
-//index.php is the main controller page for the app. it gets an action from other pages with forms via a $_GET or a $_POST
-//function and then passes variables to other php scripts, which then perform actions like running SQL queries for viewing
-//adding, deleting, and displaying data from the database tables
-
 <?php
     require('model/database.php');              //provides access to database with vehicle tables
     require('model/vehicle_db.php');            //contains vehicle database functions
     require('model/type_db.php');               //contains functions for manipulating types
     require('model/class_db.php');              //contains functions for manipulating classes
+
+/*index.php is the main controller page for the app. it gets an action from other pages with forms via a $_GET or a $_POST
+function and then passes variables to other php scripts, which then perform actions like running SQL queries for viewing
+adding, deleting, and displaying data from the database tables*/
 
 
 //checks to see if variable $action was set from a different page of the app via a POST or GET command, sets $action to null
