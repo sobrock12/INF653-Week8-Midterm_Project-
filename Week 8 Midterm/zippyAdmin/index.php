@@ -1,4 +1,6 @@
 <?php
+//file is the same as index.php in the 'zippy' directory but with some added functionality for viewing, adding, and
+//removing vehicles, types, and classes
     require('model/database.php');
     require('model/vehicle_db.php');
     require('model/type_db.php');
