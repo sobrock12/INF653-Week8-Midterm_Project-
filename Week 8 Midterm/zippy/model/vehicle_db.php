@@ -1,4 +1,7 @@
 <?php
+//default SQL query for vehicle_list page, gets year, make, make, model & price from vehicles table, 
+//type from vehicle_type table, and class from vehicle_class table and combines all into one result with a
+//left join SQL query
     function get_all_vehicles() {
         global $db;
         $query = 'SELECT V.year, V.make, V.model, T.type, C.class, V.price
@@ -13,7 +16,10 @@
         return $all_vehicles;
     }
 
+//function that takes variables selected by user, and finds different results from differing SQL queries depending on 
+//whether the forms elements have passed a variable or not
     function get_vehicles_by_criteria($make_selection, $type_selection, $class_selection, $sort_selection) {
+        //this group of nested if statements comprise the SQL queries that are sorted by price
     if ($sort_selection == '0') {  
         global $db;
         if ($make_selection == "0" && $type_selection == NULL && $class_selection == NULL) {
@@ -148,7 +154,7 @@
         return $vehicles;
 
         }
-
+    //these nested if statements are for sorting results by year
     }else if ($sort_selection == '1') {
         global $db;
         if ($make_selection == "0" && $type_selection == NULL && $class_selection == NULL) {
